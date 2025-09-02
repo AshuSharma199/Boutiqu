@@ -1,8 +1,10 @@
+import Footer from "./Footer";
+
 export default function About() {
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
+    <div className="min-h-screen w-full bg-gray-50 flex items-center flex-col justify-center pt-2">
       <div className="max-w-4xl bg-white shadow-lg rounded-2xl p-10">
-        <h2 className="text-3xl font-bold text-center text-amber-500 mb-6">
+        <h2 className="text-3xl font-bold text-center text-[#d96d67] mb-6">
           About Vastram Boutique
         </h2>
 
@@ -26,6 +28,7 @@ export default function About() {
           a festive occasion, or simply wish to wear something elegant, 
           we are here to make your fashion dreams come true. ✨
         </p>
+   
       </div>
     </div>
     

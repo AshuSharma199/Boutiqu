@@ -7,7 +7,14 @@ import Navbar from './Components/NavBar.jsx'
 import Contact from './Pages/Contact.jsx'
 import Home from './Pages/Home.jsx'
 import Clothing from './Pages/Clothing.jsx'
-import About from './Pages/about.jsx'
+import About from './Pages/About.jsx'
+import Services from './Pages/Services.jsx'
+import Footer from './Pages/Footer.jsx'
+import WhatsAppButton from './Pages/Whatsapp.jsx'
+import Hero from './Pages/Hero.jsx'
+import { div } from 'framer-motion/m'
+import Profile from './Pages/Profile.jsx'
+
 
 const router =createBrowserRouter([
   {
@@ -15,9 +22,15 @@ const router =createBrowserRouter([
   element:
   <div> 
     <Navbar/>
+    <Hero />
     <Home/>
-    <App/>
-   
+    <App/> 
+    <Clothing/>
+    <Services/>
+    <Contact/>
+    <About />
+    <Footer/>
+  
   </div>
   },
   {
@@ -26,14 +39,8 @@ const router =createBrowserRouter([
     <div>
       <Navbar/>
       <Contact/>
-    </div>
-  },
-  {
-    path:'/',
-    element:
-    <div>
-      <Navbar/>
-      <Contact/>
+      <WhatsAppButton/>
+      <Footer/>
     </div>
   },
   {
@@ -42,6 +49,8 @@ const router =createBrowserRouter([
     <div>
       <Navbar/>
       <Clothing/>
+      <WhatsAppButton/>
+      <Footer />
     </div>
   },
   {
@@ -49,7 +58,28 @@ const router =createBrowserRouter([
     element:
     <div>
       <Navbar/>
-    <About/>
+      <About/>
+      <WhatsAppButton/>
+      <Footer />
+    </div>
+  },
+  {
+    path:"/Services",
+    element:
+    <div>
+      <Navbar />
+      <Services/>
+      <WhatsAppButton/>
+      <Footer />
+    </div>
+  },
+  {
+    path:'/Profile',
+    element:
+    <div>
+      <Navbar/>
+      <Profile/>
+      <Footer />
     </div>
   }
 ])
